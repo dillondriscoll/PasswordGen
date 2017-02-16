@@ -10,7 +10,7 @@ def generator(choice):
     letterbank = 'aeiouyAEIOUYbcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ123456789'
     randomChars = ['!','@','#','$','%','^','&','*','(',')']
     name = []
-    for i in range(0,choice+1):
+    for i in range(0,choice-1):
         name.insert(i,random.choice(letterbank))
     randomNewChar = random.randint(0,len(name))
     name.insert(randomNewChar,randomChars[random.randint(0,len(randomChars))])
